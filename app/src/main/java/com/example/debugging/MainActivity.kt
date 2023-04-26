@@ -14,11 +14,12 @@ class MainActivity : AppCompatActivity() {
     }
     fun division(){
         val numerator = 60
-        var denomitator = 4
+        var denominator = 4
 
-        repeat(5){
-            Log.v(TAG,"${numerator / denomitator}")
-            denomitator--
+        repeat(4){
+            Log.d(TAG, "$denominator")
+            Log.v(TAG,"${numerator / denominator}")
+            denominator--
         }
     }
 
