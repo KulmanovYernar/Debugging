@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+//fun logs
     fun logging(){
         Log.e(TAG,"ERROR: a serious error like an app crash")
         Log.w(TAG,"WARN: warns about the potential for serious errors")
