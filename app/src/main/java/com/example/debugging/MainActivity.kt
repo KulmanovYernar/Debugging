@@ -21,14 +21,9 @@ class MainActivity : AppCompatActivity() {
     fun division() {
         val numerator = 60
         var denominator = 4
-        thread(start = true) {
-            repeat(4) {
-                Thread.sleep(3000)
-                runOnUiThread {
-                    findViewById<TextView>(R.id.division_textview).setText("${numerator / denominator}")
-                    denominator--
-                }
-            }
+        repeat(5) {
+            Log.v(TAG, "${numerator / denominator}")
+            denominator--
         }
     }
 //fun logs
